@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udemy Translator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo-box">
+      <div class="logo-icon">🌐</div>
+      <div class="logo-text">
+        <h2>Udemy Translator</h2>
+        <span class="version">Dịch Phụ Đề Tiếng Việt</span>
+      </div>
+    </div>
+    <div class="status-indicator">
+      <span class="dot"></span> Đang bật
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="setting-item">
+      <div class="info">
+        <label class="setting-label">Tự dịch sang Tiếng Việt</label>
+        <span class="setting-desc">Dịch trực tiếp phụ đề sang Tiếng Việt thời gian thực</span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="autoTranslate">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="setting-item">
+      <div class="info">
+        <label class="setting-label">Phụ đề song ngữ (Anh - Việt)</label>
+        <span class="setting-desc">Hiện cả tiếng Anh gốc và tiếng Việt bên dưới</span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="bilingual">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="setting-item">
+      <div class="info">
+        <label class="setting-label">Kích thước chữ phụ đề</label>
+        <span class="setting-desc">Điều chỉnh độ lớn chữ trên video</span>
+      </div>
+      <select id="fontSize" class="select-box">
+        <option value="small">Nhỏ</option>
+        <option value="medium">Vừa (Chuẩn)</option>
+        <option value="large">Lớn</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="tips">💡 Tương thích với Udemy và FPL Udemy</div>
+    <div class="copyright">Bản quyền tiện ích được tạo bởi <strong>Dev yanfeii_9999</strong></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
